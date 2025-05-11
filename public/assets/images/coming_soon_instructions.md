@@ -1,0 +1,1 @@
+Create a generic placeholder image (e.g., 800x1100px) that says "Style Preview Coming Soon" or similar. This will be used if a specific style's image is missing.

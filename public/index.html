@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeForge - Template Showcase</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="showcase-header">
+        <h1>ResumeForge Template Showcase</h1>
+        <p>Discover the perfect design for your professional journey.</p>
+    </header>
+
+    <main class="showcase-main">
+        <div class="showcase-controls">
+            <input type="search" id="showcase-search-input" placeholder="Search templates & styles (e.g., 'modern', 'tech', 'CEO')">
+        </div>
+
+        <div id="showcase-gallery" class="showcase-gallery">
+            <!-- Template cards will be injected here by JavaScript -->
+            <p class="loading-message">Loading templates...</p>
+        </div>
+    </main>
+
+    <footer class="showcase-footer">
+        <p>© 2025 FatStinkyPanda. All rights reserved.</p>
+    </footer>
+
+    <!-- Style Preview Modal -->
+    <div id="style-preview-modal" class="modal hidden" role="dialog" aria-labelledby="style-preview-modal-title" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close-button" aria-label="Close style preview">×</button>
+            <h2 id="style-preview-modal-title">Style Preview</h2>
+            <div class="modal-image-gallery">
+                <button class="gallery-nav prev" id="gallery-prev-button" aria-label="Previous image" disabled><</button>
+                <div class="modal-image-container">
+                    <img id="style-preview-image" src="#" alt="Style Preview Image">
+                </div>
+                <button class="gallery-nav next" id="gallery-next-button" aria-label="Next image" disabled>></button>
+            </div>
+            <div id="style-preview-page-indicator" class="gallery-page-indicator">Page 0 / 0</div>
+        </div>
+    </div>
+
+    <!-- Style Details Info Modal -->
+    <div id="style-details-info-modal" class="modal hidden" role="dialog" aria-labelledby="style-info-modal-title" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close-button" aria-label="Close style details">×</button>
+            <h2 id="style-info-modal-title">Style Details</h2>
+            <div id="style-info-modal-body">
+                <!-- Style details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Data Files First -->
+    <script src="js/template_theory.js"></script>
+    <script src="js/style_theory.js"></script>
+    <!-- Main Showcase Script -->
+    <script src="js/showcase.js"></script>
+</body>
+</html>

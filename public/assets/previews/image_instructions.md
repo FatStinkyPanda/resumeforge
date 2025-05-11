@@ -1,0 +1,1 @@
+You will create the actual preview images for each style and place them in the public/assets/previews/{templateKey}/{styleKey}.png path. I will use placeholder logic for images.
